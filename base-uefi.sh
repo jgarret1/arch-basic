@@ -1,15 +1,15 @@
 #!/bin/bash
 
-ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
+ln -sf /usr/share/zoneinfo/America/Santiago /etc/localtime
 hwclock --systohc
-sed -i '177s/.//' /etc/locale.gen
-locale-gen
-echo "LANG=en_US.UTF-8" >> /etc/locale.conf
-echo "KEYMAP=de_CH-latin1" >> /etc/vconsole.conf
-echo "arch" >> /etc/hostname
+# sed -i '177s/.//' /etc/locale.gen
+# locale-gen
+echo "LANG=es_CL.UTF-8" >> /etc/locale.conf
+echo "KEYMAP=es" >> /etc/vconsole.conf
+echo "jglarch" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
-echo "127.0.1.1 arch.localdomain arch" >> /etc/hosts
+echo "127.0.1.1 jglarch.localdomain jglarch" >> /etc/hosts
 echo root:password | chpasswd
 
 # You can add xorg to the installation packages, I usually add it at the DE or WM install script
