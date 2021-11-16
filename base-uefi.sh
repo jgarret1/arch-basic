@@ -17,7 +17,7 @@ echo root:password | chpasswd
 
 pacman -S grub efibootmgr intel-ucode networkmanager network-manager-applet dialog mtools dosfstools reflector linux-headers xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils bluez bluez-utils cups hplip alsa-utils bash-completion openssh rsync reflector os-prober ntfs-3g terminus-font fuse2 gtkmm libcanberra pcsclite xorg xorg-xinit xterm xf86-video-intel xf86-video-vmware xf86-input-vmmouse open-vm-tools 
 
-pacman -S ttf-ubuntu-font-family ttf-dejavu ttf-liberation ttf-roboto noto-fonts
+pacman -S ttf-ubuntu-font-family ttf-dejavu ttf-liberation ttf-roboto noto-fonts 
 ttf-opensans ttf-font-awesome ttf-droid 
 # pacman -S --noconfirm xf86-video-intel
 # pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
